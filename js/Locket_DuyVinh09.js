@@ -1,24 +1,15 @@
-// ========= ID ========= //
-const mapping = {
-  'Locket': ['Gold']
-};
-// =========   Phần cố định  ========= // 
-// =========  @duyvinh09 ========= // 
-var ua = $request.headers["User-Agent"] || $request.headers["user-agent"],
-  obj = JSON.parse($response.body);
+var obj = JSON.parse($response.body);
 obj.Attention = "Chúc mừng bạn! Vui lòng không bán hoặc chia sẻ cho người khác!";
+
 var duyvinh09 = {
       auto_resume_date: null,
       display_name: "locket_1600_1y",
       is_sandbox: true,
       ownership_type: "PURCHASED",
       billing_issues_detected_at: null,
-      management_url: "https://apps.apple.com/account/subscriptions",
+      management_url: "https://apple.com",
       period_type: "normal",
-      price: {
-          "amount": 399000.0,
-          "currency": "VND"
-      },
+      price: {"amount": 399000.0, "currency": "VND"},
       expires_date: "9999-01-09T10:10:14Z",
       grace_period_expires_date: null,
       refunded_at: null,
@@ -31,14 +22,14 @@ var duyvinh09 = {
   locketGold = {
       grace_period_expires_date: null,
       purchase_date: "2007-10-01T10:10:14Z",
-      product_identifier: "locket_1600_1y",
+      product_identifier: "Gold",
       expires_date: "9999-01-09T10:10:14Z"
   };
-const match = Object.keys(mapping).find(e => ua.includes(e));
-if (match) {
-  let [e, s] = mapping[match];
-  s ? (locketGold.product_identifier = s, obj.subscriber.subscriptions[s] = duyvinh09) : obj.subscriber.subscriptions["locket_1600_1y"] = duyvinh09, obj.subscriber.entitlements[e] = locketGold
-} else obj.subscriber.subscriptions["locket_1600_1y"] = duyvinh09, obj.subscriber.entitlements.pro = locketGold;
-$done({
-  body: JSON.stringify(obj)
-});
+
+if (obj.subscriber) {
+  obj.subscriber.subscriptions["Gold"] = duyvinh09;
+  obj.subscriber.subscriptions["locket_1600_1y"] = duyvinh09;
+  obj.subscriber.entitlements["Gold"] = locketGold;
+}
+
+$done({body: JSON.stringify(obj)});
