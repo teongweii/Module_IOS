@@ -265,7 +265,7 @@ if (ua.includes("Locket")) {
         widget_sync_token_reload_mode: "clearTokenNever",
         widget_frame_event: JSON.stringify({
             uid: "custom_frame_v12",
-            url: "https://i.ibb.co/LXmYMsTx/C8-CF3-F9-B-247-C-44-A3-AB39-2-BF7-D74-B5-B78.png", // Link khung mới
+            url: "https://i.ibb.co/twkZcQ6R/A0533-F78-B463-4-C3-F-A387-DA708725-ECC6.png",
             use_local_time_zone: true,
             placement: "below",
             start_at: "2020-01-01T00:00:00",
@@ -352,7 +352,7 @@ if (ua.includes("Locket")) {
             overlay_dynamic_captions: JSON.stringify([
             "standard", "poll", "color_palette", "review", "music", "location",
             "weather", "time", "streak", "star_sign", "party_time", "locket_count",
-            "good_morning", "goodnight", "ootd", "miss_you", "custom", "phunu_2010", "halloween_2026", "chuoi_ngay_cay_phim", "phu_trong_dep_trai", "sinh_nhat_vui_ve_nha_ba", "cai_gi_z_troi", "chi_dien_toi_day", "hoc_lam_z_troi", "toi_gio_di_ngu_roi", "wo_ai_ni", "tian_xiwei", "toi_me_ba_qua", "bien_oi_huuu", "gut_mo_ninh", "bao_nua_roi_a"
+            "good_morning", "goodnight", "ootd", "miss_you", "custom", "phunu_2010", "halloween_2026", "sinh_nhat_vui_ve_nha_ba", "cai_gi_z_troi", "toi_gio_di_ngu_roi", "wo_ai_ni", "tian_xiwei", "toi_me_ba_qua", "bien_oi_huuu", "gut_mo_ninh", "bao_nua_roi_a"
         ]),
         overlay_items: JSON.stringify([
             {
@@ -375,19 +375,14 @@ if (ua.includes("Locket")) {
                 ]
             },
             {
-                section: "🎨 Trương Phú Trọng 🪐",
+                section: "🎨 Hồng Trúc 👑",
                 items: [
-                    { overlay_id: "caption:phu_trong_dep_trai", source: "remote", caption: { background: { colors: ["#FF9A9E", "#FECFEF", "#FEC8D8"] }, icon: { data: "🤭", type: "emoji" }, max_lines: 1, text: "Phú Trọng đẹp trai", localized_text: { en: "Phú Trọng đẹp trai", vn: "Phú Trọng đẹp trai" }, text_color: "#703848", type: "static_content" } },
-                    { overlay_id: "caption:chuoi_ngay_cay_phim", source: "remote", caption: { background: { colors: ["#FF0062", "#FF783F"] }, icon: { data: "🍿", type: "emoji" }, max_lines: 1, text: "Chuỗi ngày cày phim bắt đầu", localized_text: { en: "Chuỗi ngày cày phim bắt đầu", vn: "Chuỗi ngày cày phim bắt đầu" }, text_color: "#FFFFFF", type: "static_content" } },
-                    { overlay_id: "caption:chi_dien_toi_day", source: "remote", caption: { background: { colors: ["#FFB5E8", "#F3C1D4", "#E8CFF0"] }, icon: { data: "😍", type: "emoji" }, max_lines: 1, text: "chị Điền tôi đấy", localized_text: { en: "Chị Điền tôi đấy", vn: "Chị Điền tôi đấy" }, text_color: "#71465D", type: "static_content" } },
                     { overlay_id: "caption:wo_ai_ni", source: "remote", caption: { background: { colors: ["#FF9A9E", "#FECFEF", "#FFC3A0"] }, icon: { data: "🌷", type: "emoji" }, max_lines: 1, text: "我爱你", localized_text: { en: "我爱你", vn: "我爱你" }, text_color: "#FFFFFF", type: "static_content" } },
-                    { overlay_id: "caption:tian_xiwei", source: "remote", caption: { background: { colors: ["#F43F5E", "#FB7185", "#FFE4E6"] }, icon: { data: "👑", type: "emoji" }, max_lines: 1, text: "Tian Xiwei", localized_text: { en: "Tian Xiwei", vn: "Tian Xiwei" }, text_color: "#FFFFFF", type: "static_content" } },
                     { overlay_id: "caption:toi_me_ba_qua", source: "remote", caption: { background: { colors: ["#FF758C", "#FF7EB3", "#FFC3A0"] }, icon: { data: "😍", type: "emoji" }, max_lines: 1, text: "Tôi mê bà quá bà ơi", localized_text: { en: "Tôi mê bà quá bà ơi", vn: "Tôi mê bà quá bà ơi" }, text_color: "#FFFFFF", type: "static_content" } },
-                    { overlay_id: "caption:hoc_lam_z_troi", source: "remote", caption: { background: { colors: ["#6B7280", "#9CA3AF", "#D1D5DB"] }, icon: { data: "😵‍💫", type: "emoji" }, max_lines: 1, text: "Học lắm z trời", localized_text: { en: "Học lắm z trời", vn: "Học lắm z trời" }, text_color: "#FFFFFF", type: "static_content" } },
                     { overlay_id: "caption:gut_mo_ninh", source: "remote", caption: { background: { colors: ["#FF8C00", "#FFA500", "#FFD700"] }, icon: { data: "☀️", type: "emoji" }, max_lines: 1, text: "Gút mó ninh", localized_text: { en: "Gút mó ninh", vn: "Gút mó ninh" }, text_color: "#FFFFFF", type: "static_content" } },
                     { overlay_id: "caption:bao_nua_roi_a", source: "remote", caption: { background: { colors: ["#FF416C", "#FF4B2B"] }, icon: { data: "😠", type: "emoji" }, max_lines: 1, text: "Báo nữa rồi á", localized_text: { en: "Báo nữa rồi á", vn: "Báo nữa rồi á" }, text_color: "#FFFFFF", type: "static_content" } },
-                     { overlay_id: "caption:sinh_nhat_vui_ve_nha_ba", source: "remote", caption: { background: { colors: ["#FF758C", "#FF7EB3", "#FFC3A0"] }, icon: { data: "🎂", type: "emoji" }, max_lines: 1, text: "Sinh nhật vui vẻ nha bà", localized_text: { en: "Sinh nhật vui vẻ nha bà", vn: "Sinh nhật vui vẻ nha bà" }, text_color: "#FFFFFF", type: "static_content" } },
-                     { overlay_id: "caption:cai_gi_z_troi", source: "remote", caption: { background: { colors: ["#E2E8F0", "#CBD5E1", "#94A3B8"] }, icon: { data: "🙂", type: "emoji" }, max_lines: 1, text: "Cái gì z trời", localized_text: { en: "Cái gì z trời", vn: "Cái gì z trời" }, text_color: "#1E293B", type: "static_content" } },
+                    { overlay_id: "caption:sinh_nhat_vui_ve_nha_ba", source: "remote", caption: { background: { colors: ["#FF758C", "#FF7EB3", "#FFC3A0"] }, icon: { data: "🎂", type: "emoji" }, max_lines: 1, text: "Sinh nhật vui vẻ nha bà", localized_text: { en: "Sinh nhật vui vẻ nha bà", vn: "Sinh nhật vui vẻ nha bà" }, text_color: "#FFFFFF", type: "static_content" } },
+                    { overlay_id: "caption:cai_gi_z_troi", source: "remote", caption: { background: { colors: ["#E2E8F0", "#CBD5E1", "#94A3B8"] }, icon: { data: "🙂", type: "emoji" }, max_lines: 1, text: "Cái gì z trời", localized_text: { en: "Cái gì z trời", vn: "Cái gì z trời" }, text_color: "#1E293B", type: "static_content" } },
                     { overlay_id: "caption:bien_oi_huuu", source: "remote", caption: { background: { colors: ["#00B4DB", "#0083B0"] }, icon: { data: "🌊", type: "emoji" }, max_lines: 1, text: "Biển ơi!!! Húuuu", localized_text: { en: "Biển ơi!!! Húuuu", vn: "Biển ơi!!! Húuuu" }, text_color: "#FFFFFF", type: "static_content" } }
                 ]
             },
