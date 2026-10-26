@@ -7,8 +7,8 @@ var ua = $request.headers["User-Agent"] || $request.headers["user-agent"],
 
 obj.Attention = "Chúc mừng bạn! Vui lòng không sử dụng chúng dưới mục đích thương mại!";
 
-var FAR_FUTURE = "9999-10-01T10:10:14Z";
-var PAST = "2007-10-01T10:10:14Z";
+var FAR_FUTURE = "9999-03-02T10:10:14Z";
+var PAST = "2003-03-02T10:10:14Z";
 
 function makeSub(productId, priceAmount, priceCurrency) {
     return {
