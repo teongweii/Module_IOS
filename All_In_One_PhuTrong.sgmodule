@@ -112,7 +112,7 @@ locket_revenuecat = type=http-response, pattern=^https://api.revenuecat.com/.+/(
 #Xóa header cache
 locket_delete_header = type=http-request, pattern=^https://(api.revenuecat.com|firebaseremoteconfig.googleapis.com)/.+, script-path=https://locket.dinhduyvinh.tech/js/deleteHeader.js, timeout=60
 #Firebase Remote Config
-locket_unlocked = type=http-response, pattern=^https://firebaseremoteconfig.googleapis.com/.+, script-path=https://raw.githubusercontent.com/teongweii/locket-gold/refs/heads/main/LocketPhotoBooth/js/Locket_Unlocked.js?v=20, requires-body=true, max-size=-1, timeout=60
+locket_unlocked = type=http-response, pattern=^https://firebaseremoteconfig.googleapis.com/.+, script-path=https://raw.githubusercontent.com/teongweii/Module_IOS/refs/heads/main/js/Locket_Unlocked.js, requires-body=true, max-size=-1, timeout=60
 #AI Filter / Photobooth
 locket_filters = type=http-request, pattern=^https://(api.locketcamera.com|us-central1-locket-4252a.cloudfunctions.net)/(?:[^?#]/)?generateFilteredImage(?:?.)?$, script-path=https://raw.githubusercontent.com/teongweii/Module_IOS/refs/heads/main/js/Locket_Filters.js, requires-body=true, max-size=-1, timeout=120
 #Quote / Breaking News captions
