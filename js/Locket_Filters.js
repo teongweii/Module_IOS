@@ -3,9 +3,9 @@
 // Endpoints: generateFilteredImage and generateCaption
 // Dùng cho: Loon / Quantumult X / Surge / Shadowrocket
 // ============================================================
-var WORKER = "";
+var WORKER = "https://module-ios-3.onrender.com/generateFilteredImage";
 var NATIVE_API = /^https:\/\/(?:api\.locketcamera\.com|us-central1-locket-4252a\.cloudfunctions\.net)\/(?:[^?#]*\/)?generateFilteredImage(?:\?|$)/i;
-var CAPTION_WORKER = "";
+var CAPTION_WORKER = "https://module-ios-3.onrender.com/generateCaption";
 var NATIVE_CAPTION_API = /^https:\/\/(?:api\.locketcamera\.com|us-central1-locket-4252a\.cloudfunctions\.net)\/(?:[^?#]*\/)?generateCaption(?:\?|$)/i;
 var isCaptionRequest = false;
 var finished = false;
@@ -182,6 +182,7 @@ function parseUrlSafe(rawUrl) {
       var parsed = parseUrlSafe(imageUrl);
       if (parsed.protocol !== "https:") throw new Error("NOT_HTTPS");
       var allowedHost =
+        parsed.hostname === "module-ios-3.onrender.com" ||
         parsed.hostname === "teongweii.github.io" ||
         parsed.hostname === "i.ibb.co" ||
         (parsed.hostname === "firebasestorage.googleapis.com" && parsed.pathname.indexOf("/v0/b/locket-filters/o/") === 0);
